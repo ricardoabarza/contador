@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+<title>Contador</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript">
+
+function pun_vid(){
+ y = document.getElementById("pun_vida");
+ x = prompt("Ingrese puntos de vida");
+ if (isNaN(x) || x =="" || x.length > 4) {
+ alert("Debes ingresar valores numéricos y menores a 5 dígitos")
+ pun_vid();
+ }
+ else if (x==undefined){
+y.innerHTML = z;
+ }
+
+else {
+z = Math.abs(+x);
+z = +z.toFixed();
+y.innerHTML = z;
+}
+}
+
+function sum(){
+z = z + 1;
+y.innerHTML = z;
+}
+
+function res(){
+if (z==0){
+y.innerHTML = z;
+}
+else {
+z = z - 1;
+y.innerHTML = z;
+}
+}
+
+
+function pun_vid2(){
+ p = document.getElementById("pun_vida2");
+ o = prompt("Ingrese puntos de vida");
+ if (isNaN(o) || o =="" || o.length > 4) {
+ alert("Debes ingresar valores numéricos y menores a 5 dígitos")
+ pun_vid2();
+ }
+ else if (o==undefined){
+p.innerHTML = i;
+ }
+
+else {
+i = Math.abs(o);
+i = +i.toFixed();
+p.innerHTML = i;
+}
+}
+
+function sum2(){
+i = i + 1;
+p.innerHTML = i;
+}
+
+function res2(){
+if (i==0){
+p.innerHTML = i;
+}
+else {
+i = i - 1;
+p.innerHTML = i;
+}
+}
+
+</script>
+</head>
+<body>
+<div id=py1>
+<div id="pun_vida"></div>
+<button class="sumres" type="button" onclick="sum()">+</button>
+<button class="sumres" type="button" onclick="res()">-</button>
+<br>
+<button class="reset1" type="button" onclick="pun_vid()">Resetear</button>
+</div>
+
+<div id="py2">
+<div id="pun_vida2"></div>
+<button class="sumres" type="button" onclick="sum2()">+</button>
+<button class="sumres" type="button" onclick="res2()">-</button>
+<br>
+<button class="reset1" type="button" onclick="pun_vid2()">Resetear</button>
+</div>
+
+
+<script type="text/javascript">
+i = 12;
+z = 12;
+var p = document.getElementById("pun_vida2");
+var y = document.getElementById("pun_vida");
+y.innerHTML = z;
+p.innerHTML = i;
+</script>
+</body>
+</html> 

@@ -1,0 +1,102 @@
+body {
+    text-align: center;
+    
+}
+#py1, #py2 {
+    float: left;
+    width: 48%;
+    border: 0;
+    padding: 0;
+    color:white;
+    margin-top: 4%
+}
+#py1, #py2 {
+    margin-left: 1%;
+}
+#pun_vida, #pun_vida2 {
+    font-size: 900%;
+}
+html {
+    background-color: black; 
+}
+.sumres {
+    font-size: 50px;
+    border:none;
+    border-radius:5px;
+    width:30%;
+    margin: 18px;
+    padding: 0;
+    
+}
+.reset1 {
+    font-size: 30px;
+    border:none;
+    border-radius:5px;
+    width:70%;
+  }
+.reset1, .sumres {
+    position: relative;
+    top: 20px;
+}
+
+
+@media all and (max-width: 600px) and (min-width: 321px) {
+    #py1, #py2 {
+    clear:both;
+    width: 100%;
+    }
+    #py1{
+    height: 425px;
+    }
+}   
+@media all and (max-width: 479px){
+  #py1, #py2 {
+    clear:both;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 9%
+  }
+  #pun_vida, #pun_vida2 {
+    font-size: 450%;
+}
+.sumres {
+    font-size: 30px;
+    border:none;
+    border-radius:5px;
+    width:28%;
+    margin: 17px;
+    padding: 0;
+}
+.reset1, .sumres {
+    position: relative;
+    top: -8px;
+}
+} 
+@media all and (max-height: 320px) {
+    #py1, #py2 {
+    width: 48%;
+    float: left;
+    clear:none
+  }
+.sumres {
+    font-size: 30px;
+    border:none;
+    border-radius:5px;
+    width:28%;
+    margin: 13px;
+    padding: 0;
+}
+#pun_vida, #pun_vida2 {
+    font-size: 550%;
+}
+#py1, #py2 {
+    margin-left: 0%;
+    
+}
+ .reset1, .sumres {
+    position: relative;
+    top: -9px;
+}
+ #py1{
+    height: 32px;
+    }

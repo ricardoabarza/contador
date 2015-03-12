@@ -1,0 +1,12 @@
+{
+  "name": "Contador",
+  "description": "Te permite llevar el conteo de puntos en una partida, sirve para juegos de cartas de estrategia donde los jugadores tengan puntos de vida",
+  "launch_path": "/index.html",
+  "icons": {
+    "32": "/32.png",
+    "48": "/48.png",
+    "128": "/128.png"
+  },
+  "version": "1.0",
+  "default_locale": "es"
+}
